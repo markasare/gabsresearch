@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>GABS</title>
+  <meta name="title" content="GABS">
+  <meta name="description" content="We are a research and development company.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/gb.png" type="image/svg+xml">
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+  <script> 
+    $(function(){
+      $("#header").load("headernav.html")
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+
+<style>
+  .collapsible {
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    display: none;
+    overflow: hidden;
+  }
+  </style>
+</head>
+
+<body>
+
+ 
+
+
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/gb.png" width="74" height="24" alt="GABS Home" class="logo-light">
+        <img src="./assets/images/gb.png" width="74" height="24" alt="GABS home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/gb.png" width="74" height="24" alt="GABS Home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>
+          <li>
+            <a href="team.html" class="navbar-link">Our Team</a>
+          </li>
+          <li>
+            <a href="assets/images/GABS RCL_Data Protection Policy_2023.pdf" class="navbar-link">Data Privacy Policy</a>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@gabsrclc.com" class="contact-link">info@gabsrclc.com</a>
+          <a href="tel:+233207087945" class="contact-link">(+233) 20 708 7945</a>
+        </div>
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Delivering research solutions with expertise</h1>
+
+            <p class="hero-text">
+              We are a research and development company that provides timely and promising research reports and analysis
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#about-label" class="btn btn-primary">Explore Now</a>
+
+              <a href="#myfooter" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/data.jpeg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                           </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">What Makes Us Unique?</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="contract" aria-hidden="true"></ion-icon>
+                </div>
+
+
+                <h3 class="h4 card-title">Proposal development</h3>
+                    <p class="card-text">We assist clients to properly cost and estimate the net present values of projects and their payback period.
+                      Our customized log frame for our SWOT analysis helps to develop the best forms of business proposals.
+                      Additionally, our experience in several World Bank and USAID funded evaluations helps us to develop 
+                      monitoring and evaluation proposals which employ outcome driven approaches and methodology which are cost efficient.</p>
+
+              </div>
+            </li>
+
+ 
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="create" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Survey design</h3>
+
+                <p class="card-text">
+                  We use existing literature relevant to the specific objectives to ask SMART questions to answer the research questions. 
+                  Depending on the nature of the survey (As it best suits it), the instrument may be programmed onto android devices 
+                  for the data collection. Tools such as CSPro, KoBo Toolbox, Survey Monkey, Survey Solutions, 
+                  Google Forms are used to deploy our CAPI applications on tablets.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+
+                    <ion-icon name="document" aria-hidden="true"></ion-icon>
+                  </div>
+  
+                  <h3 class="h4 card-title">Data Collection</h3>
+
+     
+                <p class="card-text">
+                  GABS Research has collected data from each constituency and district in Ghana. 
+                  These surveys include household agricultural surveys, household enterprise surveys, 
+                  individual respondent political surveys, firm surveys, health facility needs assessment surveys, 
+                  and school surveys among students, teachers and other stakeholders in the pre-tertiary learning space. 
+                  The data collection may take the form of qualitative interviews (i.e. in-depth interviews, key informant interviews, 
+                  focus group discussions) or quantitative surveys.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Analysis</h3>
+
+                <p class="card-text">
+                  We perform basic descriptive analysis on data collected based on the various specific objectives of the study. 
+                  We also conduct estimations, 
+                  predictions and exploratory analysis where we employ the best statistical approach to arrive at meaningful conclusions. 
+                  Various tools for significance testing usually conducted for clients include but not limited to Chi-squared tests, T-tests, ANOVA, non-linear regression analysis, principal component analysis (PCA), structural equation modelling (SEM), survey and panel analysis.  
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/stats2.jpg" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              We bring solutions to make life easier for our clients
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5">Quality assurance monitoring</span>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    The need to monitor the activities of enumerators whilst on the field to ascertain the quality of work 
+                    cannot be over emphasized. This helps to spot any data collection anomalies that could have arose 
+                    from poor questioning in the instrument, insufficient understanding on how to ask the question on 
+                    the part of the enumerator as well as the identification of artificial outliers and invalid responses so 
+                    the necessary corrections are made on time. This data quality checks which run concurrently with the field data 
+                    collection is made possible as a result of the daily synchronization of data files to a centralized server.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Top-Notch Training</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    We offer hands-on training in Stata (statistical analysis software), 
+                    SPSS (statistical analysis software) and CSPro (a data collection tool) to individual clients 
+                    and corporate institutions to aid in effective decision making.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Expertise</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our report writing team who comprise mainly of masters and Ph.D qualified staff produce 
+                    the best form of reports which are very objective and speak to the findings.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5">Quality Data Management</span>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Data collected from the field through interviews are prepared for analysis. T
+                    his involves data cleaning and generating other secondary variables for analysis. 
+                    Some data files may be appended or merged to suit the kind of analysis expected.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/stress.jpg" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Our Solutions</p>
+
+            <h2 class="h2 section-title">
+              We make your research journey a stress-free one!
+            </h2>
+
+            <p class="section-text"><em>Don't compromise on quality!</em>
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Data Quality
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Excellent analysis and reports
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Timeliness
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Defense coaching
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">518</span>
+
+                <spna class="span">Completed Projects</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">162</span>
+
+                <spna class="span">Happy Customers</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">84</span>
+
+                <spna class="span">Expert Employees</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">523</span>
+
+                <spna class="span">Reports Written</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!--
+        #PROJECTS
+      -->
+
+
+
+
+    
+     
+
+      <section id = "projects" class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">We work with</p>
+          <ul class="stats-card" class="stats-card has-bg-image" style="background-image: url('./assets/images/')">
+
+            <li>
+              <img src="assets/images/clients/cmi.png" alt="CMI" width="100" height="100">
+            </li>
+
+            <li>
+              <img src="assets/images/clients/logo_cms.png" alt="CMS" width="100" height="100">
+            </li>
+
+            <li>
+              <img src="assets/images/clients/csps.png" alt="CSPS" width="100" height="100">
+            </li>
+
+            <li>
+              <img src="assets/images/clients/ids.png" alt="IDS" width="100" height="100">
+            </li>
+            <li>
+              <img src="assets/images/clients/Oxford.png" alt="Oxford" width="100" height="100">
+            </li>
+            <li>
+              <img src="assets/images/clients/ttel.png" alt="Cornell" width="100" height="100">
+            </li>
+            <li>
+              <img src="assets/images/clients/Duke.png" alt="DUKE" width="100" height="100">
+            </li>
+            <li>
+              <img src="assets/images/clients/Cornell.png" alt="Cornell" width="100" height="100">
+            </li>
+            <li>
+              <img src="assets/images/clients/kpmg.png" alt="KPMG" width="100" height="100">
+            </li>
+
+            <li>
+              <img src="assets/images/clients/konrad.png" alt="Konrad" width="100" height="100">
+            </li>
+  
+            <li>
+              <img src="assets/images/clients/leciad.png" alt="LECIAD" width="100" height="100">
+            </li>
+
+            <li>
+              <img src="assets/images/clients/isser.png" alt="ISSER" width="100" height="100">
+            </li>
+            <li>
+              <img src="assets/images/clients/gender.png" alt="GENDER" width="100" height="100">
+            </li>
+          </li>
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Join our STATA class and increase your opportunities of finding a research-related job
+          </h2>
+<!--
+          <a href="#" class="btn btn-primary">Learn more</a>
+-->
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+
+  <footer class="footer" id="myfooter">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/gb.png" width="74" height="24" alt="Adex home">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 gabsrclc.com<br> All rights reserved
+        </p>
+<!--
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/kojoponq" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com/siabanku" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/markasare" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/kojoponk/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/markasare/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+-->
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Plot # 5, Haatso-Ecomog, Accra, Ghana
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:gabsrclc.com" class="footer-link">info@gabsrclc.com</a>
+        </li>
+
+        <li>
+          <a href="tel:+233207087945" class="footer-link">(+233) 20 708 7945</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="aboutus.html" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="aboutus.html" class="footer-link">Our Story</a>
+        </li>
+
+        <li>
+          <a href="#projects" class="footer-link">Projects</a>
+        </li>
+
+        <li>
+          <a href="assets/images/GABS RCL_Data Protection Policy_2023.pdf" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Our Newsletter</p>
+
+        <p class="footer-text">
+          Subscribe to our newsletter to get our news & deals delivered to you.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Join</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+
+</html>

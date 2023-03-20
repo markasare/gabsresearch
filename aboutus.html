@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>GABS</title>
+  <meta name="title" content="GABS">
+  <meta name="description" content="We are a research and development company.">
+
+  <!-- 
+    - favicon
+  -->
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+  <script> 
+    $(function(){
+      $("#header").load("headernav.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/gb.png" width="74" height="24" alt="GABS Home" class="logo-light">
+        <img src="./assets/images/gb.png" width="74" height="24" alt="GABS home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/gb.png" width="74" height="24" alt="GABS Home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="team.html" class="navbar-link">Our Team</a>
+          </li>
+          <li>
+            <a href="assets/images/GABS RCL_Data Protection Policy_2023.pdf" class="navbar-link">Data Privacy Policy</a>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@gabsrclc.com" class="contact-link">info@gabsrclc.com</a>
+          <a href="tel:+233207087945" class="contact-link">(+233) 20 708 7945</a>
+        </div>
+        <!--
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        -->
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!-- 
+    - #HEADER
+  -->
+
+
+  <main>
+  <article>
+
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero has-bg-image" aria-label="home"
+      style="background-image: url('./assets/images/hero-bg.jpg')">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="h1 hero-title"><u>About Us</u></h1>
+          <p class="hero-text">GABS Research Consult Limited Company is a Ghanaian 
+            registered research firm incorporated in 2013.</p>
+          <p class="hero-text">Since 2014, <strong>GABS Research Consult
+            Limited Company</strong> has collaborated with dozens of institutions
+        and individuals
+        to conduct surveys.</p>
+    <p class="hero-text">We have a team of field data collection
+        officers who have been
+        <strong>certified</strong> by the
+        <strong>Institutional Review Board of
+            Cornell University for Human
+            Subjects Research.</strong>
+    </p>
+    <p class="hero-text">This team is made up of
+        both enumerators for quantitative
+        surveys and interviewers (leads) for
+        in-depth interviews and focus
+        group discussions.</p>
+    <p class="hero-text">We are a full research consultancy firm
+        providing services from proposal
+        development,
+        survey instrument design, training of
+        enumerators, field data collection,
+        quality assurance monitoring, data
+        management, analysis to report writing.
+    </p>
+        </div>
+        <div class="hero-slider" data-slider>
+
+          <div class="slider-inner">
+            <ul class="slider-container" data-slider-container>
+
+              <li class="slider-item">
+                <figure class="img-holder" style="--width: 585; --height: 550;">
+                  <img src="./assets/images/gabs.jpg" width="585" height="550" alt="" class="img-cover">
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+          <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+    </article>
+
+
+    <section class="section hero has-bg-image" aria-label="home"
+    style="background-image: url('./assets/images/hero-bg.jpg')">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="h1 hero-title"><u>Competencies</u></h1>
+        <ol>
+          <li class="comp-text"> &#10003; Designing survey instruments (i.e.
+            questionnaires and interview guides)</li>
+            <li class="comp-text"> &#10003; Designing Computer Assisted Personal
+              Interviewing (CAPI) applications</li>
+            <li class="comp-text">&#10003; Administering survey questionnaires</li>
+            <li class="comp-text"> &#10003; Data processing (desktop data entry)</li>
+            <li class="comp-text">&#10003; Remote monitoring of surveys</li>
+            <li class="comp-text">&#10003; Data Management</li>
+            <li class="comp-text">&#10003; Preparing data files for analysis</li>
+            <li class="comp-text">&#10003; Statistical data analysis</li>
+            <li class="comp-text">&#10003; Writing reports</li>
+            <li class="comp-text">&#10003; Statistical software training (Stata, SPSS,
+              CSPro)</li>
+        </ol>
+      </div>
+      <div class="hero-slider" data-slider>
+
+        <div class="slider-inner">
+          <ul class="slider-container" data-slider-container>
+
+            <li class="slider-item">
+              <figure class="img-holder" style="--width: 585; --height: 650;">
+                <img src="./assets/images/johnny.jpeg" width="585" height="650" alt="" class="img-cover">
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </section>
+  </article>
+
+
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+ 
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/gb.png" width="74" height="24" alt="Adex home">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 gabsrclc.com<br> All rights reserved
+        </p>
+<!--
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/kojoponq" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com/siabanku" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/markasare" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/kojoponk/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/markasare/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+-->
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Plot # 5, Haatso-Ecomog, Accra, Ghana
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:gabsrclc.com" class="footer-link">info@gabsrclc.com</a>
+        </li>
+
+        <li>
+          <a href="tel:+233207087945" class="footer-link">(+233) 20 708 7945</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="aboutus.html" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="aboutus.html" class="footer-link">Our Story</a>
+        </li>
+
+        <li>
+          <a href="assets/images/GABS RCL_Data Protection Policy_2023.pdf" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Our Newsletter</p>
+
+        <p class="footer-text">
+          Subscribe to our newsletter to get our news & deals delivered to you.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Join</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</body>
+
+</html>
